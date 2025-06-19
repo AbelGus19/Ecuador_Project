@@ -1,0 +1,92 @@
+name: CI Pipeline - QA
+
+on:
+  push:
+    branches: [qa]
+  pull_request:
+    branches: [qa]
+
+jobs:
+  java-auth-service:
+    name: Java - Auth Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/auth-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Run Tests
+        run: mvn test
+
+  go-rbac-service:
+    name: Go - RBAC Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/rbac-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+      - name: Run Tests
+        run: go test ./...
+
+  python-audit-service:
+    name: Python - Audit Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/audit-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run Tests
+        run: pytest
+
+  node-product-service:
+    name: Node.js - Product Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/product-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+      - name: Run Tests
+        run: npm test
+
+  dotnet-payment-service:
+    name: .NET - Payment Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/payment-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+      - name: Restore
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Test
+        run: dotnet test --no-build
