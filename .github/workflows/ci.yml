@@ -258,3 +258,87 @@ jobs:
         run: npm install || true
       - name: Run Tests
         run: npm test
+
+  node-chat-service:
+    name: Node.js - Chat Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/chat-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install || true
+      - name: Run Tests
+        run: npm test
+
+  go-analytics-service:
+    name: Go - Analytics Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/analytics-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+      - name: Run Tests
+        run: go test ./...
+
+  python-fraud-service:
+    name: Python - Fraud Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/fraud-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run Tests
+        run: pytest
+
+  dotnet-config-service:
+    name: .NET - Config Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/config-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+      - name: Restore
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Test
+        run: echo "No tests available, passing..."
+
+  java-notification-service:
+    name: Java - Notification Service
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: microservices/notification-service
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Run Tests
+        run: mvn test
