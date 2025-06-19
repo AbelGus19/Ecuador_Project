@@ -1,0 +1,7 @@
+{
+  "name": "push-service",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Push test executed\" && exit 0"
+  }
+}

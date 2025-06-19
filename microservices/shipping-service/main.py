@@ -1,0 +1,2 @@
+def ship():
+    return True
