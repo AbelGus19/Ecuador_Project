@@ -1,0 +1,10 @@
+com\ecuadorceramico\product\dto\ProductRequest.class
+com\ecuadorceramico\product\repository\ProductRepository.class
+com\ecuadorceramico\product\entity\Product.class
+com\ecuadorceramico\product\config\SwaggerConfig.class
+com\ecuadorceramico\product\controller\ProductController.class
+com\ecuadorceramico\product\security\JwtAuthenticationFilter.class
+com\ecuadorceramico\product\dto\ProductResponse.class
+com\ecuadorceramico\product\ProductServiceApplication.class
+com\ecuadorceramico\product\service\ProductService.class
+com\ecuadorceramico\product\security\SecurityConfig.class

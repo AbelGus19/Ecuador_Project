@@ -1,0 +1,10 @@
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\service\AuthService.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\security\JwtUtil.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\config\SecurityConfig.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\repository\UserRepository.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\AuthServiceApplication.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\entity\User.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\dto\LoginRequest.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\dto\LoginResponse.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\security\JwtAuthenticationFilter.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\auth-service\src\main\java\com\ecuador\auth\controller\AuthController.java

@@ -1,0 +1,12 @@
+com\ecuador\rbac\security\JwtService.class
+com\ecuador\rbac\entity\Role.class
+com\ecuador\rbac\model\Role.class
+com\ecuador\rbac\RbacServiceApplication.class
+com\ecuador\rbac\repository\UserRepository.class
+com\ecuador\rbac\repository\RoleRepository.class
+com\ecuador\rbac\dto\UserWithRolesDTO.class
+com\ecuador\rbac\service\RoleService.class
+com\ecuador\rbac\entity\User.class
+com\ecuador\rbac\security\SecurityConfig.class
+com\ecuador\rbac\controller\RoleController.class
+com\ecuador\rbac\security\JwtAuthenticationFilter.class

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "M5jg0Ztc1h0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\clavi\\Desktop\\Project_Distribuida\\Project_Ecuador_Ceramic\\microservices\\image-service\\ImageService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\clavi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\clavi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\clavi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\clavi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+  ],
+  "logs": []
+}

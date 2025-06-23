@@ -1,0 +1,12 @@
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\security\SecurityConfig.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\entity\Role.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\entity\User.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\dto\UserWithRolesDTO.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\service\RoleService.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\repository\UserRepository.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\controller\RoleController.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\model\Role.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\security\JwtAuthenticationFilter.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\RbacServiceApplication.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\security\JwtService.java
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\rbac-service\src\main\java\com\ecuador\rbac\repository\RoleRepository.java

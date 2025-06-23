@@ -1,0 +1,6 @@
+com\ecuador\userprofile\entity\UserProfile$UserProfileBuilder.class
+com\ecuador\userprofile\service\UserProfileService.class
+com\ecuador\userprofile\repository\UserProfileRepository.class
+com\ecuador\userprofile\entity\UserProfile.class
+com\ecuador\userprofile\UserProfileServiceApplication.class
+com\ecuador\userprofile\controller\UserProfileController.class

@@ -1,0 +1,11 @@
+com\ecuador\auth\repository\UserRepository.class
+com\ecuador\auth\security\JwtAuthenticationFilter.class
+com\ecuador\auth\dto\LoginRequest.class
+com\ecuador\auth\service\AuthService.class
+com\ecuador\auth\entity\User.class
+com\ecuador\auth\controller\AuthController.class
+com\ecuador\auth\config\SecurityConfig.class
+com\ecuador\auth\security\JwtUtil.class
+com\ecuador\auth\AuthServiceApplication.class
+com\ecuador\auth\dto\LoginResponse.class
+com\ecuador\auth\entity\User$UserBuilder.class
