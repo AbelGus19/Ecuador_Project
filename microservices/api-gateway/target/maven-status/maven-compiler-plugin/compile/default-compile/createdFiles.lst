@@ -1,3 +1,0 @@
-com\ecuadorceramico\apigateway\ApiGatewayApplication.class
-com\ecuadorceramico\apigateway\security\JwtService.class
-com\ecuadorceramico\apigateway\security\JwtAuthFilter.class

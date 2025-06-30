@@ -1,0 +1,15 @@
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\bin\Debug\net6.0\ConfigService.exe
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\bin\Debug\net6.0\ConfigService.deps.json
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\bin\Debug\net6.0\ConfigService.runtimeconfig.json
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\bin\Debug\net6.0\ConfigService.dll
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\bin\Debug\net6.0\ConfigService.pdb
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ConfigService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ConfigService.AssemblyInfoInputs.cache
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ConfigService.AssemblyInfo.cs
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ConfigService.csproj.CoreCompileInputs.cache
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ConfigService.sourcelink.json
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ConfigService.dll
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\refint\ConfigService.dll
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ConfigService.pdb
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ConfigService.genruntimeconfig.cache
+C:\Users\clavi\Desktop\Project_Distribuida\Project_Ecuador_Ceramic\microservices\config-service\obj\Debug\net6.0\ref\ConfigService.dll

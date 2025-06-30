@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7ac96e0bddfbd2a0c42816c1773ef05a0619b0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6268e5a650056f2d8b5243dd10d8ea17cfe60c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

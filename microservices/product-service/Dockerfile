@@ -1,5 +1,7 @@
-FROM openjdk:17
-COPY . /app
+FROM node:18
 WORKDIR /app
-RUN ./mvnw clean package
-CMD ["java", "-jar", "target/product-service-0.0.1-SNAPSHOT.jar"]
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["node", "src/app.js"]
