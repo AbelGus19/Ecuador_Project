@@ -1,0 +1,5 @@
+com\ecuadorceramica\categoryservice\repository\CategoryRepository.class
+com\ecuadorceramica\categoryservice\service\CategoryService.class
+com\ecuadorceramica\categoryservice\CategoryServiceApplication.class
+com\ecuadorceramica\categoryservice\controller\CategoryController.class
+com\ecuadorceramica\categoryservice\model\Category.class
