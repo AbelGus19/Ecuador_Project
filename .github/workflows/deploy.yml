@@ -1,0 +1,36 @@
+name: Deploy to EC2 QA
+
+on:
+  push:
+    branches:
+      - qa
+
+jobs:
+  deploy:
+    name: Despliegue en EC2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Copiar archivos al servidor EC2
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: "."
+          target: "~/Project_Ecuador_Ceramic"
+
+      - name: Desplegar servicios con Docker Compose
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/Project_Ecuador_Ceramic
+            docker compose down || true
+            docker compose pull || true
+            docker compose up -d --build
