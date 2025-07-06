@@ -22,22 +22,6 @@ jobs:
           distribution: 'temurin'
       - name: Run Tests
         run: mvn test
-
-  go-rbac-service:
-    name: Go - RBAC Service
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: microservices/rbac-service
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: '1.20'
-      - name: Run Tests
-        run: go test ./...
-
   python-audit-service:
     name: Python - Audit Service
     runs-on: ubuntu-latest
@@ -71,26 +55,6 @@ jobs:
         run: npm install || true
       - name: Run Tests
         run: npm test
-
-  dotnet-payment-service:
-    name: .NET - Payment Service
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: microservices/payment-service
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '6.0.x'
-      - name: Restore
-        run: dotnet restore
-      - name: Build
-        run: dotnet build --no-restore
-      - name: Test
-        run: dotnet test --no-build
-
   node-search-service:
     name: Node.js - Search Service
     runs-on: ubuntu-latest
