@@ -23,12 +23,12 @@ services:
     restart: unless-stopped
 
   category-service:
-    image: abelgus19/category-service:1.0
+    build: ./microservices/category-service
     container_name: category-service
     ports:
-      - "8085:8085"
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
+      - "3002:3002"
+    env_file:
+      - ./microservices/category-service/.env
     depends_on:
       - mongo-db
     restart: unless-stopped
@@ -39,7 +39,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./microservices/api-gateway/nginx.conf:/etc/nginx/nginx.conf
     depends_on:
       - product-service
       - category-service
