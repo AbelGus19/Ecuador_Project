@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  mongo-db:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: unless-stopped
+
+  product-service:
+    image: abelgus19/product-service:latest
+    container_name: product-service
+    ports:
+      - "3000:3000"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - mongo-db
+    restart: unless-stopped
+
+  category-service:
+    image: abelgus19/category-service:1.0
+    container_name: category-service
+    ports:
+      - "8085:8085"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - mongo-db
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-gateway
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - product-service
+      - category-service
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
