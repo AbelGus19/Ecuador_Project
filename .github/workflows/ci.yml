@@ -342,3 +342,18 @@ jobs:
           distribution: 'temurin'
       - name: Run Tests
         run: mvn test
+  java-category-service:
+      name: Java - Category Service
+      runs-on: ubuntu-latest
+      defaults:
+        run:
+          working-directory: microservices/category-service
+      steps:
+        - uses: actions/checkout@v3
+        - name: Set up JDK
+          uses: actions/setup-java@v3
+          with:
+            java-version: '17'
+            distribution: 'temurin'
+        - name: Run Tests
+          run: mvn test
