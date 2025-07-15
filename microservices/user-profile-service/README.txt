@@ -1,1 +1,0 @@
-Este es un placeholder temporal para user-profile-service. Por favor reemplazar con contenido real.

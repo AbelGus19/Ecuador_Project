@@ -45,5 +45,15 @@ services:
       - category-service
     restart: unless-stopped
 
+  user-profile-service:
+    image: abelgus19/user-profile-service:latest
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env
+    depends_on:
+      - auth-service
+
+
 volumes:
   mongo-data:
