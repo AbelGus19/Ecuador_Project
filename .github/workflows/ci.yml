@@ -354,4 +354,5 @@ jobs:
           context: ./microservices/user-profile-service
           file: ./microservices/user-profile-service/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/user-profile-service:latest
+          tags: |
+           ${{ secrets.DOCKERHUB_USERNAME }}/user-profile-service:latest
