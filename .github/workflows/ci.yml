@@ -351,8 +351,7 @@ jobs:
       - name: Build & Push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: .                         # Ruta al microservicio
-          file: Dockerfile                  # Tu Dockerfile
+          context: ./microservices/user-profile-service
+          file: ./microservices/user-profile-service/Dockerfile
           push: true
-          tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/user-profile-service:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/user-profile-service:latest
